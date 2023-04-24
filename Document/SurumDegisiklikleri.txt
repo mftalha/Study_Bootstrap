@@ -1,0 +1,2 @@
+------------ Jquery bağımlılığı
+- bootstrap v5 den önce jquery kütüphanesine bağımlılık duyar iken => v5 den sonra bu bağımlılık kaldırıldı.

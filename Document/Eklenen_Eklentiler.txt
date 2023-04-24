@@ -1,0 +1,1 @@
+- Live Server : server üzerinden projeyi çalıştırıp  == ctrl+s 'e tıklandığında direk değişikliği algılayıp sayfaya yansıtması için. => vsCode sayfasında sag tıklayıp : Open with Live Server dediğimde sayfa yı otomatik browser'da sunucu üzerinden açacaktır.
