@@ -1,0 +1,2 @@
+---------- h1 etiketi
+- her bir sayfada 1 tane h1 etiketi olmalı ve buda sayfanın özeti olmalı => eğerki h1 özelliğinde 2. bir yapı oluşturmak istiyor isek =>  <p class="h1">h1.bootstrap heading</p> gibi kullanabiliriz.
