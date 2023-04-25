@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <title>Borders - Shadows</title>
+    <style>
+        body{
+            padding: 70px;
+        }
+    </style>
+</head>
+<body>
+    <!-- [border : sınır, kenar ;; shadow : gölge ;; rounded: yuvarlatılmış]-->
+    <div class="bg-light mt-2 p-4"></div>
+    <!--kenarlık eklemek için class'a border veriyoruz : bir kenarlık ile çevreliyor ilgili alanı. => kenarları çiziyor: belirginleştiriyor.-->
+    <div class="bg-light mt-2 p-4 border"></div>
+    <!-- border-top diyerekde ilgili tag'ın sadecce üst kısmını çizebiliriz.-->
+    <div class="bg-light mt-2 p-4 border-top"></div>
+    <div class="bg-light mt-2 p-4 border-start"></div>
+    <div class="bg-light mt-2 p-4 border-end"></div>   
+    <div class="bg-light mt-2 p-4 border-bottom"></div>   
+    
+    <br><br>
+
+    <div class="bg-light mt-2 p-4"></div>
+    <!-- burada ise border-0 olsun diyoruz : yani olmasın diyoruz direk-->
+    <div class="bg-light mt-2 p-4 border-0"></div>
+    <!-- burada ise border-top-0 olsun yani top'da border olmasın ama diğer kısımlarında : alt sag sol border olsun diyoruz.-->
+    <div class="bg-light mt-2 p-4 border border-top-0"></div>
+    <div class="bg-light mt-2 p-4 border border-start-0"></div>
+    <div class="bg-light mt-2 p-4 border border-end-0"></div>   
+    <div class="bg-light mt-2 p-4 border border-bottom-0"></div>
+
+    <br><br>
+
+    <!-- border'lara renk vermek için-->
+    <div class="bg-light mt-2 p-4 border border-primary"></div>
+    <div class="bg-light mt-2 p-4 border border-success"></div>
+    <div class="bg-light mt-2 p-4 border border-warning"></div>
+    <div class="bg-light mt-2 p-4 border border-info"></div>   
+    <div class="bg-light mt-2 p-4 border border-light"></div>   
+    <div class="bg-light mt-2 p-4 border border-dark"></div>   
+    <div class="bg-light mt-2 p-4 border border-white"></div>   
+
+    <br><br>
+    <!-- tüm kenarları yuvarlamak için : köşelerin sivriliğini alma-->
+    <div class="bg-light mt-2 p-4 border border-primary rounded"></div>
+    <!-- sadece üst kısımdaki sınırın köşelerini yuvarlama.-->
+    <div class="bg-light mt-2 p-4 border border-success rounded-top"></div>
+    <div class="bg-light mt-2 p-4 border border-warning rounded-start"></div>
+    <div class="bg-light mt-2 p-4 border border-info rounded-bottom"></div>   
+    <div class="bg-light mt-2 p-4 border border-light rounded-end"></div>   
+    <div class="bg-light mt-2 p-4 border border-dark"></div>   
+    <div class="bg-light mt-2 p-4 border border-white"></div>   
+
+    <br><br>
+
+    <!-- https://via.placeholder.com/200 ==> 200 piksellik bir resim alanı gelsin. -->
+    <!-- resmin tüm kenarları yuvarlak olsun-->
+    <img src="https://via.placeholder.com/200" class="rounded mt-2" alt="">
+    <!-- resmin sadece üst kısmındaki kenarları yuvarlak olsun-->
+    <img src="https://via.placeholder.com/200" class="rounded-top mt-2" alt="">
+    <img src="https://via.placeholder.com/200" class="rounded-start mt-2" alt="">
+    <img src="https://via.placeholder.com/200" class="rounded-end mt-2" alt="">  
+    <img src="https://via.placeholder.com/200" class="rounded-bottom mt-2" alt="">  
+    <!-- alltak3 3'lü resimlere özel-->
+    <!--resim tamamen yuvarlatılır-->
+    <img src="https://via.placeholder.com/200" class="rounded-circle mt-2" alt="">  
+    <img src="https://via.placeholder.com/200x100" class="rounded-circle mt-2" alt="">  
+    <!-- resim sag ve soldan yuvarlatılır orta kısmı düz kalır-->
+    <img src="https://via.placeholder.com/200x100" class="rounded-pill mt-2" alt="">  
+    <!-- kenrlık değeri sm'de : yuvarlıklığı lg ye göre daha azdır-->
+    <img src="https://via.placeholder.com/200" class="rounded-0 mt-2" alt="">  <!-- 0 : sm-->
+    <img src="https://via.placeholder.com/200" class="rounded-3 mt-2" alt="">  <!-- 3 : lg-->
+    
+    <br><br>
+
+    <!-- gölgeleme yok-->
+    <div class="bg-light mt-4 p-4 rounded shadow-none"></div>
+    <!-- gölgeleme az var : sm-->
+    <div class="bg-light mt-4 p-4 rounded shadow-sm"></div>
+    <!-- gölgeleme normal var :-->
+    <div class="bg-light mt-4 p-4 rounded shadow"></div>
+    <!-- gölgeleme çok var : lg-->
+    <div class="bg-light mt-4 p-4 rounded shadow-lg"></div>
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
