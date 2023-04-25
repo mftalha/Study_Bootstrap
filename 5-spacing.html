@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <title>Bootstrap Spacing</title>
+    <style>
+        body{
+            padding: 70px;
+        }
+    </style>
+</head>
+<body>
+    <!--
+        [Margin : kenar , fazlalık , tolerans ;; Padding : dolgu malzemesi ;; bottom: alt ;; spacer = ayırıcı] 
+        Margin and Padding
+
+        Not : margin => taglar arasıdaki boşlluklar için : mt-2 der isem ilgili tag'a => ilgili tag ın üstünden 2 boyut boşluk ver demiş oluruz
+              padding => ilgili tag'ın içinde genişleme sağlamak için kullanıyoruz. pt-2 der isek => 2 boyut tagı yukarıdan genişlet demiş oluyoruz. => tabi yazı ilgili tag'ın en altında kalır çünkü tagın içinde üstten boşluk verdiğimiden yukarı genişleme olsada başlangıç yazı olacaktır.
+
+
+        -- {property}{sides}-{size}  => Genel Kural mantığı
+        - property : margin - pading olup olmıyacağı => m: margin ; p: padding
+        - sides : üstmü - altmı - sağ mı - sol mu : nereden boşluk veya kenarlık vermek istiyoruz. 
+            => t : top ;
+               b : bottom 
+               s: start(sol) 
+               e: end(sag) 
+               x: start, end 
+               y: top, bottom   
+               ==> mt ; pb ; ms ; pe ; mx:[hem start hem end için olacak.] py:[hem top hem bottom için uygulanacak verilen değer] gibi kullancaz propery ile beraber.
+            Not 1: sol ve sağ bootstap 5 öncesi için -l(s) ; -r(e) olarak yazılıyor.
+        - size : boyut bilgisi => margin veya padding'i ne kadar bırakacaz. 
+            => 0 - 5 arasıdır
+            0: mt-0 => margin-top:0 => üstten herhangi bir boşluk bırakma
+            Not : Spacer'ın varsayılan değeri mevcuttur ama biz bu değeri istediğimiz zaman değiştirebiliriz.
+            1: mt-1 => margin-top:$spacer * 0.25 => burdaki spacer önceden tanımlanmış bir değer. => mesela spacer 40 px ise: 40 * 0.25 : 10px olacaktır.
+            2: mt-2 => margin-top:$spacer * 0.50
+            3: mt-3 => margin-top:$spacer * 1 => spacer değerinin kendisi oluyor ==> 
+            4: mt-4 => margin-top:$spacer * 1.5
+            5: mt-5 => margin-top:$spacer * 3
+            auto: mx-auto => sagdan soldan eşit boşluk'lar bırakılır.
+            Not 2: eğerki verilecek boşluk değerini : m veya p : her yönden uygulamk istiyor isek : m-3 ; p-3 diyerek side belirtmeden verebiliyoruz.
+    -->
+
+    <div class="bg-success p-3">first</div>
+    <div class="bg-danger p-5">second</div>
+    <div class="bg-warning pt-5 mt-2">warning</div>
+    <div class="bg-secondary pb-5 mt-2">secondary</div>
+    
+    <br><br>
+    
+    <div class="bg-primary p-3" style="text-align: center;">
+        centred element
+    </div>
+
+    <div class="bg-primary p-3 mt-2" style="text-align: center; width: 150px;">
+        centred element add width for style
+    </div>
+
+    <!-- mx-auto ile : sağdan ve oldan eşit boşluklar verdik :-->
+    <div class="bg-primary p-3 mt-2 mx-auto" style="text-align: center; width: 150px;">
+        centred element 2 add mx-auto for bootstrap class
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
