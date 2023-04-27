@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <title>Bootstrap Breakpoints</title>
+    <style>
+
+        /* Bootstrap cihaz boyutuna göre css özellik belirleme boyutlarının css kodları ile gösterimi : bootstrapda otomatik arka planda. */
+
+        /* 
+            - X- Small-Devices (xs => bootstrapdaki isim karşılığı bu boyutun)
+            - herhangi bir aralıkta olmıyan cihazlar için media dışındaki css kodları aktif olur =>  576 pikselden düşük cihazlar'dır 
+            - 576 dan düşük cihazların media ile belirtilmemesi ve buraya yazılıyor olması : mobil cihazların css verilerine daha hızlı erişmesini ve daha hızlı olmalarını sağlar :> bootstrapda mantık böyle.
+        */
+        body{
+            background-color: red;
+        }
+
+        /* Small Devices(sm) => telefonlar için  => 576 dan başalr 767'e kadar => bir üstteki media değerine kadar.*/
+        @media (min-width: 576px) {  
+            body{
+                background-color: green;
+            }
+        }
+
+        /* Medium Devices(md) => tabletler için*/
+        @media (min-width: 768px) {
+            body{
+                background-color: blue;
+            }
+        }
+
+        /* Large Devices(lg) = masaüstü ekranları için*/
+        @media (min-width: 992px) {
+            body{
+                background-color: red;
+            }
+        }
+
+        /* X-Large Devices(xl) = extra büyük ekranlar için*/
+        @media (min-width: 1200px ) {
+            body{
+                background-color: green;
+            }
+        }
+
+        /* XX-Large Devices(xxl) == televizyon boyutu => 1900 olabilir bunun boyutu*/
+        @media (min-width: 1400px) {
+            body{
+                background-color: blue;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
