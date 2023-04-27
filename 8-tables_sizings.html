@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <title>Bootstrap Tables & Sizing</title>
+    <style>
+        body{
+            padding: 70px;
+        }
+    </style>
+</head>
+<body>
+    <!-- {Responsive : duyarlı} -->
+    <!-- w-25 => body'in genişliği kaç ise %25 boyutunu dive genişlik olarak veriyoruz.-->
+    <div class="bg-success mb-2 p-4 w-25"></div>
+    <div class="bg-success mb-2 p-4 w-50"></div>
+    <div class="bg-success mb-2 p-4 w-75"></div>
+    <div class="bg-success mb-2 p-4 w-100"></div>
+
+    <!-- body'in bir genişliği olmnadığından bir genişlik veriyoruz önce : yoksa herşeyi aynı boyutta getiriyor bir satır boyutunda : ölçüsü olmadığından-->
+    <div style="height: 400px" class="bg-warning">
+        <div class="bg-primary d-inline-block p-4 h-25"></div>
+        <div class="bg-primary d-inline-block p-4 h-50"></div>
+        <div class="bg-primary d-inline-block p-4 h-75"></div>
+        <div class="bg-primary d-inline-block p-4 h-100"></div>
+    </div>
+
+    <br><br>
+
+    <h3> basic table </h3>
+    <table>
+        <thead>
+            <!-- tr : satır.-->
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Talha Satır</td>
+                <td>info@talhasatir.com</td>
+                <td>Antalya</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Çınar Atar</td>
+                <td>info@cinaratar.com</td>
+                <td>Konya</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mehmt Tuna</td>
+                <td>info@mehmettuna.com</td>
+                <td>İstanbul</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ufuk Bayrak</td>
+                <td>info@ufukbayrak.com</td>
+                <td>Van</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <h3> basic boostrap table </h3>
+    <table class="table">
+        <thead>
+            <!-- tr : satır.-->
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Talha Satır</td>
+                <td>info@talhasatir.com</td>
+                <td>Antalya</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Çınar Atar</td>
+                <td>info@cinaratar.com</td>
+                <td>Konya</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mehmt Tuna</td>
+                <td>info@mehmettuna.com</td>
+                <td>İstanbul</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ufuk Bayrak</td>
+                <td>info@ufukbayrak.com</td>
+                <td>Van</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <h3>  boostrap table with back-ground </h3>
+    <table class="table table-primary">
+        <thead>
+            <!-- tr : satır.-->
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Talha Satır</td>
+                <td>info@talhasatir.com</td>
+                <td>Antalya</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Çınar Atar</td>
+                <td>info@cinaratar.com</td>
+                <td>Konya</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mehmt Tuna</td>
+                <td>info@mehmettuna.com</td>
+                <td>İstanbul</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ufuk Bayrak</td>
+                <td>info@ufukbayrak.com</td>
+                <td>Van</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+    <h3>  boostrap table with specific back-ground </h3>
+    <table class="table">
+        <thead>
+            <!-- tr : satır.-->
+            <tr class="table-secondary">
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Talha Satır</td>
+                <td>info@talhasatir.com</td>
+                <td>Antalya</td>
+            </tr>
+            <tr class="table-success">
+                <td>2</td>
+                <td>Çınar Atar</td>
+                <td>info@cinaratar.com</td>
+                <td>Konya</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mehmt Tuna</td>
+                <td>info@mehmettuna.com</td>
+                <td>İstanbul</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ufuk Bayrak</td>
+                <td class="table-danger">info@ufukbayrak.com</td>
+                <td>Van</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <br><br>
+
+    <h3> table-striped => tablodaki satırları birbirinden ayırmak için arka arkaya satırları belirli 2 renk tonunda ayırma  </h3>
+    <table class="table table-success table-striped">
+        <thead>
+            <!-- tr : satır.-->
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Talha Satır</td>
+                <td>info@talhasatir.com</td>
+                <td>Antalya</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Çınar Atar</td>
+                <td>info@cinaratar.com</td>
+                <td>Konya</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mehmt Tuna</td>
+                <td>info@mehmettuna.com</td>
+                <td>İstanbul</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ufuk Bayrak</td>
+                <td>info@ufukbayrak.com</td>
+                <td>Van</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <br><br>
+
+    <h3> table-hover => ilgili satırın üstüne geldiğimizde  satır işaretlenmesi </h3>
+    <table class="table table-warning table-striped table-hover">
+        <thead>
+            <!-- tr : satır.-->
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Talha Satır</td>
+                <td>info@talhasatir.com</td>
+                <td>Antalya</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Çınar Atar</td>
+                <td>info@cinaratar.com</td>
+                <td>Konya</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mehmt Tuna</td>
+                <td>info@mehmettuna.com</td>
+                <td>İstanbul</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ufuk Bayrak</td>
+                <td>info@ufukbayrak.com</td>
+                <td>Van</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <h3> table-bordered => tablo stunlarına çizgi çekmek için. </h3>
+    <table class="table table-warning table-striped table-bordered">
+        <thead>
+            <!-- tr : satır.-->
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Talha Satır</td>
+                <td>info@talhasatir.com</td>
+                <td>Antalya</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Çınar Atar</td>
+                <td>info@cinaratar.com</td>
+                <td>Konya</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mehmt Tuna</td>
+                <td>info@mehmettuna.com</td>
+                <td>İstanbul</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ufuk Bayrak</td>
+                <td>info@ufukbayrak.com</td>
+                <td>Van</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <h3> table-bordered border-primary => tablo stunlarına çizgi ve çizgi rengi verme. </h3>
+    <table class="table table-warning table-striped table-bordered border-primary">
+        <thead>
+            <!-- tr : satır.-->
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Talha Satır</td>
+                <td>info@talhasatir.com</td>
+                <td>Antalya</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Çınar Atar</td>
+                <td>info@cinaratar.com</td>
+                <td>Konya</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mehmt Tuna</td>
+                <td>info@mehmettuna.com</td>
+                <td>İstanbul</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ufuk Bayrak</td>
+                <td>info@ufukbayrak.com</td>
+                <td>Van</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <br><br>
+
+    <h3>table table-borderless => tabloda hiç border olmasın </h3>
+    <table class="table table-borderless">
+        <thead>
+            <!-- tr : satır.-->
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Talha Satır</td>
+                <td>info@talhasatir.com</td>
+                <td>Antalya</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Çınar Atar</td>
+                <td>info@cinaratar.com</td>
+                <td>Konya</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mehmt Tuna</td>
+                <td>info@mehmettuna.com</td>
+                <td>İstanbul</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ufuk Bayrak</td>
+                <td>info@ufukbayrak.com</td>
+                <td>Van</td>
+            </tr>
+        </tbody>
+    </table>
+    
+    <br><br>
+
+    <h3> table table-sm => table padding'lerinin düşürülmesi </h3>
+    <table class="table table-sm">
+        <thead>
+            <!-- tr : satır.-->
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Email</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Talha Satır</td>
+                <td>info@talhasatir.com</td>
+                <td>Antalya</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Çınar Atar</td>
+                <td>info@cinaratar.com</td>
+                <td>Konya</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mehmt Tuna</td>
+                <td>info@mehmettuna.com</td>
+                <td>İstanbul</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Ufuk Bayrak</td>
+                <td>info@ufukbayrak.com</td>
+                <td>Van</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br><br>
+
+    <div class="table-responsive"> 
+        <h3> div.table-responsive => tablodaki stunların sayfaya sıgmaması durumunda tablo altında scrool bar çıkması için. => tüm sayfanın altında çıkar bu class'ı koymz isek </h3>
+        <table class="table table-sm">
+            <thead>
+                <!-- tr : satır.-->
+                <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>City</th>
+                    <th>City</th>
+                    <th>City</th>
+                    <th>City</th>
+                    <th>City</th>
+                    <th>City</th>
+                    <th>City</th>
+                    <th>City</th>
+                    <th>City</th>
+                    <th>City</th>
+                    <th>City</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1</td>
+                    <td>Talha Satır</td>
+                    <td>info@talhasatir.com</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Çınar Atar</td>
+                    <td>info@cinaratar.com</td>
+                    <td>Konya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Mehmt Tuna</td>
+                    <td>info@mehmettuna.com</td>
+                    <td>İstanbul</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Ufuk Bayrak</td>
+                    <td>info@ufukbayrak.com</td>
+                    <td>Van</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                    <td>Antalya</td>
+                </tr>
+            </tbody>
+        </table>
+    </div> 
+
+    <script href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
