@@ -1,0 +1,4 @@
+----- bootstrap ölçümüne göre baştan boşluk verme : == offset
+offset-2 == dediğim zaman bootstrap ölçümündeki 12 lik ölçeklendirmenin => 3. ölçümünden başlar 1. yerine(belki 0. yerine)
+
+-
