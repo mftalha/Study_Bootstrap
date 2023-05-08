@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <title>Bootstrap Dropdowns</title>
+    <style>
+        body{
+            padding: 70px;    
+        }
+    </style>
+</head>
+<body>
+
+    <!-- 
+        : dropdown oluşturmak için 
+        - dropdown-toggle => button içindeki alt kulakçığı
+        - data-bs-toggle="dropdown" => js verileri olmadan dropdown özelliği kazandırmak için
+    -->
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+            Dropdown button
+        </button>
+
+        <ul class="dropdown-menu">
+            <li><a href="#" class="dropdown-item">Munu 1</a></li>
+            <li><a href="#" class="dropdown-item">Munu 2</a></li>
+            <li><a href="#" class="dropdown-item">Munu 3</a></li>
+        </ul>
+    </div>
+
+    <br><br>
+
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+            Dropdown button
+        </button>
+
+        <ul class="dropdown-menu">
+            <li><a href="#" class="dropdown-item">Munu 1</a></li>
+            <li><a href="#" class="dropdown-item">Munu 2</a></li>
+            <div class="dropdown-divider"></div> <!-- itemler arasına ayraç eklemek için-->
+            <li><a href="#" class="dropdown-item">Munu 3</a></li>
+        </ul>
+    </div>
+
+    <br><br>
+
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+            Dropdown button
+        </button>
+
+        <ul class="dropdown-menu">
+            <li><a href="#" class="dropdown-item">Munu 1</a></li>
+            <li><a href="#" class="dropdown-item">Munu 2</a></li>
+            <div class="dropdown-header">Dropdown Header</div> <!-- itemler arasına başlık eklemek için-->
+            <li><a href="#" class="dropdown-item">Munu 3</a></li>
+        </ul>
+    </div>
+
+    <br><br>
+    <!-- ekran okuyucu işlemleri ve çift buton işlemleri.-->
+    <div class="btn-group">
+
+        <button class="btn btn-danger">Action</button>
+        <button class="btn btn-danger dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+            <!-- 
+                - sr-only => sadece ekran okuyucular için gösterilsin.
+                - botstrap 5 'de => visually-hidden olarak değiştirildi.
+             -->
+            <span class="visually-hidden">Dropdown button</span>  
+        </button>
+
+
+        <ul class="dropdown-menu">
+            <li><a href="#" class="dropdown-item">Munu 1</a></li>
+            <li><a href="#" class="dropdown-item">Munu 2</a></li>
+            <h6 class="dropdown-header">Dropdown Header</h6> <!-- itemler arasına başlık eklemek için-->
+            <li><a href="#" class="dropdown-item">Munu 3</a></li>
+        </ul>
+    </div>
+
+    <br><br>
+
+    <!-- Butonları küçültmek için.-->
+    <div class="btn-group">
+
+        <button class="btn btn-danger btn-sm">Action</button>
+        <button class="btn btn-danger btn-sm dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+            <!-- 
+                - sr-only => sadece ekran okuyucular için gösterilsin.
+                - botstrap 5 'de => visually-hidden olarak değiştirildi.
+             -->
+            <span class="visually-hidden">Dropdown button</span>  
+        </button>
+
+
+        <ul class="dropdown-menu">
+            <li><a href="#" class="dropdown-item">Munu 1</a></li>
+            <li><a href="#" class="dropdown-item">Munu 2</a></li>
+            <h6 class="dropdown-header">Dropdown Header</h6> <!-- itemler arasına başlık eklemek için-->
+            <li><a href="#" class="dropdown-item">Munu 3</a></li>
+        </ul>
+    </div>
+
+    <br><br>
+
+    <!-- Butonları büyütmek için-->
+    <div class="btn-group">
+
+        <button class="btn btn-danger btn-lg">Action</button>
+        <button class="btn btn-danger btn-lg dropdown-toggle dropdown-toggle-split" data-bs-toggle="dropdown">
+            <!-- 
+                - sr-only => sadece ekran okuyucular için gösterilsin.
+                - botstrap 5 'de => visually-hidden olarak değiştirildi.
+             -->
+            <span class="visually-hidden">Dropdown button</span>  
+        </button>
+
+
+        <ul class="dropdown-menu">
+            <li><a href="#" class="dropdown-item">Munu 1</a></li>
+            <li><a href="#" class="dropdown-item">Munu 2</a></li>
+            <h6 class="dropdown-header">Dropdown Header</h6> <!-- itemler arasına başlık eklemek için-->
+            <li><a href="#" class="dropdown-item">Munu 3</a></li>
+        </ul>
+    </div>
+
+    <br><br>
+
+    <!-- dropdown'unun üst'e açılması için   -->
+    <div class="dropdown dropup">
+        <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+            Dropdown button
+        </button>
+
+        <ul class="dropdown-menu">
+            <li><a href="#" class="dropdown-item">Munu 1</a></li>
+            <li><a href="#" class="dropdown-item">Munu 2</a></li>
+            <div class="dropdown-header">Dropdown Header</div> <!-- itemler arasına başlık eklemek için-->
+            <li><a href="#" class="dropdown-item">Munu 3</a></li>
+        </ul>
+    </div>
+
+    <br><br>
+
+    <!-- dropdown'unun sağ'a açılması için   -->
+    <div class="dropdown dropend">
+        <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+            Dropdown button
+        </button>
+
+        <ul class="dropdown-menu">
+            <li><a href="#" class="dropdown-item">Munu 1</a></li>
+            <li><a href="#" class="dropdown-item">Munu 2</a></li>
+            <div class="dropdown-header">Dropdown Header</div> <!-- itemler arasına başlık eklemek için-->
+            <li><a href="#" class="dropdown-item">Munu 3</a></li>
+        </ul>
+    </div>
+
+    <br><br>
+
+    <!-- dropdown elemanlarını link değilde buton olarak kullanmak için   -->
+    <div class="dropdown dropend">
+        <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">
+            Dropdown button
+        </button>
+
+        <ul class="dropdown-menu">
+            <li><button type="button" class="dropdown-item">Munu 1</button></li>
+            <li><button type="button" class="dropdown-item">Munu 2</button></li>
+            <li><button type="button" class="dropdown-item">Munu 3</button></li>
+        </ul>
+    </div>
+
+    <br><br>
+
+    <!-- dropdown elemanlarına : active veya passive değerleri verilebilir  -->
+    <div class="dropdown dropend">
+        <button class="btn btn-success dropdown-toggle" data-bs-toggle="dropdown">
+            Dropdown button
+        </button>
+
+        <ul class="dropdown-menu">
+            <li><button type="button" class="dropdown-item">Munu 1</button></li>
+            <li><button type="button" class="dropdown-item active">Munu 2</button></li>
+            <li><button type="button" class="dropdown-item disabled">Munu 3</button></li>
+        </ul>
+    </div>
+
+    <br><br>
+
+    <!-- dropdown içine  bu şekilde form'da ekleyebiliriz-->
+    <div class="dropdown dropend">
+        <button class="btn btn-info dropdown-toggle" data-bs-toggle="dropdown">
+            Dropdown button
+        </button>
+
+        <div class="dropdown-menu">
+            <form class="px-4 py-4">
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" placeholder="Email">
+                </div>
+                <div class="mb-3">
+                    <label for="password" class="form-label">Password</label>
+                    <input type="password" class="form-control" placeholder="Password">
+                </div>
+                <button class="btn btn-primary">Login</button>
+            </form>
+            <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Sign Up</a>
+                <a href="#" class="dropdown-item">Forgot Password?</a>
+        </div>
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
