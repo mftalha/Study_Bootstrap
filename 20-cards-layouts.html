@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <title>Bootstrap Card Layouts</title>
+    <style>
+        body{
+            padding: 70px;
+        }
+    </style>
+</head>
+<body>
+    
+    <p> img-fluid => ilgili resmin bulunduğu div'in ölçülerine uyması sağlanır</p>
+    <div class="card mb-3">
+        <div class="row">
+            <div class="col-4">
+                <img src="img/1.jpeg" class="img-fluid" alt="">
+            </div>
+            <div class="col-8">
+                <div class="card-body">
+                    <h5 class="card-text">Cart title</h5>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero accusantium quia vitae sint maiores, facere quos ab in est excepturi, voluptates velit. Voluptates exercitationem iste ea ab temporibus nulla deleniti!</p>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, aut.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="card mb-3">
+        <div class="row">
+                <img src="img/1.jpeg" class="img-fluid" alt="">
+                <div class="card-body">
+                    <h5 class="card-text">Cart title</h5>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero accusantium quia vitae sint maiores, facere quos ab in est excepturi, voluptates velit. Voluptates exercitationem iste ea ab temporibus nulla deleniti!</p>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, aut.</p>
+                </div>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="row">
+                <img src="img/2.jpeg" class="img-fluid" alt="">
+                <div class="card-body">
+                    <h5 class="card-text">Cart title</h5>
+                    <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt perspiciatis tempora repellendus sunt placeat aperiam dicta minus magni, quod recusandae praesentium sint sapiente nostrum ut architecto commodi vel, dolores ipsum possimus laboriosam. Quaerat dolore suscipit quam, ipsam consequuntur beatae, earum blanditiis doloremque veritatis tenetur nemo quibusdam odit est inventore cumque.</p>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, aut.</p>
+                </div>
+        </div>
+    </div>
+
+    <div class="card mb-3">
+        <div class="row">
+                <img src="img/3.jpeg" class="img-fluid" alt="">
+                <div class="card-body">
+                    <h5 class="card-text">Cart title</h5>
+                    <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero accusantium quia vitae sint maiores, facere quos ab in est excepturi, voluptates velit. Voluptates exercitationem iste ea ab temporibus nulla deleniti!</p>
+                    <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, aut.</p>
+                </div>
+        </div>
+    </div>
+    
+
+    <p> 3 resmi yan yana göstermek için gurupluyoruz => card-group class'ı içine kaç tane card koyarsam koyayım => yan yana sığdırmak için boyut ayarı otomatik yapılacaktır.</p>
+    <div class="card-group">
+        <div class="card mb-3">
+            <div class="row">
+                    <img src="img/1.jpeg" class="img-fluid" alt="">
+                    <div class="card-body">
+                        <h5 class="card-text">Cart title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero accusantium quia vitae sint maiores, facere quos ab in est excepturi, voluptates velit. Voluptates exercitationem iste ea ab temporibus nulla deleniti!</p>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, aut.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last Updated 3 mins ago.</small>
+                    </div>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="row">
+                    <img src="img/2.jpeg" class="img-fluid" alt="">
+                    <div class="card-body">
+                        <h5 class="card-text">Cart title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta excepturi eum qui quasi, quas non minus explicabo odio quibusdam rerum, tempora ullam beatae mollitia quisquam et sunt vel cupiditate voluptatibus assumenda? Sapiente distinctio repellat alias fugiat a sed sequi quidem accusantium reiciendis ad! Sint delectus deserunt officia, pariatur suscipit fugiat.</p>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, aut.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last Updated 3 mins ago.</small>
+                    </div>
+            </div>
+        </div>
+
+        <div class="card mb-3">
+            <div class="row">
+                    <img src="img/3.jpeg" class="img-fluid" alt="">
+                    <div class="card-body">
+                        <h5 class="card-text">Cart title</h5>
+                        <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero accusantium quia vitae sint maiores, facere quos ab in est excepturi, voluptates velit. Voluptates exercitationem iste ea ab temporibus nulla deleniti!</p>
+                        <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, aut.</p>
+                    </div>
+                    <div class="card-footer">
+                        <small class="text-muted">Last Updated 3 mins ago.</small>
+                    </div>
+            </div>
+        </div>
+    </div>
+
+    <p> bir satır içinde columnlar verir ve bu columnlar içine card koyup bunu tekrarlar isek : tek bir satır içindeki kolumn'ları yan yana aynı satıra sığdıracaktır bootstrap. </p>
+    <div class="row">
+        <div class="col">
+            <div class="card mb-3">
+                <div class="row">
+                        <img src="img/3.jpeg" class="img-fluid" alt="">
+                        <div class="card-body">
+                            <h5 class="card-text">Cart title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero accusantium quia vitae sint maiores, facere quos ab in est excepturi, voluptates velit. Voluptates exercitationem iste ea ab temporibus nulla deleniti!</p>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, aut.</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-3">
+                <div class="row">
+                        <img src="img/3.jpeg" class="img-fluid" alt="">
+                        <div class="card-body">
+                            <h5 class="card-text">Cart title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero accusantium quia vitae sint maiores, facere quos ab in est excepturi, voluptates velit. Voluptates exercitationem iste ea ab temporibus nulla deleniti!</p>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, aut.</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-3">
+                <div class="row">
+                        <img src="img/3.jpeg" class="img-fluid" alt="">
+                        <div class="card-body">
+                            <h5 class="card-text">Cart title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero accusantium quia vitae sint maiores, facere quos ab in est excepturi, voluptates velit. Voluptates exercitationem iste ea ab temporibus nulla deleniti!</p>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, aut.</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-3">
+                <div class="row">
+                        <img src="img/3.jpeg" class="img-fluid" alt="">
+                        <div class="card-body">
+                            <h5 class="card-text">Cart title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero accusantium quia vitae sint maiores, facere quos ab in est excepturi, voluptates velit. Voluptates exercitationem iste ea ab temporibus nulla deleniti!</p>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, aut.</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <p> bir satırda kaçtane column olsun : row row-cols-2 </p>
+    <div class="row row-cols-2">
+        <div class="col">
+            <div class="card mb-3">
+                <div class="row">
+                        <img src="img/3.jpeg" class="img-fluid" alt="">
+                        <div class="card-body">
+                            <h5 class="card-text">Cart title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero accusantium quia vitae sint maiores, facere quos ab in est excepturi, voluptates velit. Voluptates exercitationem iste ea ab temporibus nulla deleniti!</p>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, aut.</p>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, aut.</p>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, aut.</p>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, aut.</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-3">
+                <div class="row">
+                        <img src="img/3.jpeg" class="img-fluid" alt="">
+                        <div class="card-body">
+                            <h5 class="card-text">Cart title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero accusantium quia vitae sint maiores, facere quos ab in est excepturi, voluptates velit. Voluptates exercitationem iste ea ab temporibus nulla deleniti!</p>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, aut.</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-3">
+                <div class="row">
+                        <img src="img/3.jpeg" class="img-fluid" alt="">
+                        <div class="card-body">
+                            <h5 class="card-text">Cart title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero accusantium quia vitae sint maiores, facere quos ab in est excepturi, voluptates velit. Voluptates exercitationem iste ea ab temporibus nulla deleniti!</p>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, aut.</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-3">
+                <div class="row">
+                        <img src="img/3.jpeg" class="img-fluid" alt="">
+                        <div class="card-body">
+                            <h5 class="card-text">Cart title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero accusantium quia vitae sint maiores, facere quos ab in est excepturi, voluptates velit. Voluptates exercitationem iste ea ab temporibus nulla deleniti!</p>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, aut.</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <p> eğerki aynı satırdaki columnlar da farklı içerikler var ise ama biz hizda bitmelerini : yani aynı h'a sahip olmalarını istiyor isek : h-100 </p>
+    <div class="row row-cols-2">
+        <div class="col">
+            <div class="card mb-3 h-100">
+                <div class="row">
+                        <img src="img/3.jpeg" class="img-fluid" alt="">
+                        <div class="card-body">
+                            <h5 class="card-text">Cart title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero accusantium quia vitae sint maiores, facere quos ab in est excepturi, voluptates velit. Voluptates exercitationem iste ea ab temporibus nulla deleniti!</p>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, aut.</p>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, aut.</p>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, aut.</p>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, aut.</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-3 h-100">
+                <div class="row">
+                        <img src="img/3.jpeg" class="img-fluid" alt="">
+                        <div class="card-body">
+                            <h5 class="card-text">Cart title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero accusantium quia vitae sint maiores, facere quos ab in est excepturi, voluptates velit. Voluptates exercitationem iste ea ab temporibus nulla deleniti!</p>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, aut.</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-3 h-100">
+                <div class="row">
+                        <img src="img/3.jpeg" class="img-fluid" alt="">
+                        <div class="card-body">
+                            <h5 class="card-text">Cart title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero accusantium quia vitae sint maiores, facere quos ab in est excepturi, voluptates velit. Voluptates exercitationem iste ea ab temporibus nulla deleniti!</p>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, aut.</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card mb-3 h-100">
+                <div class="row">
+                        <img src="img/3.jpeg" class="img-fluid" alt="">
+                        <div class="card-body">
+                            <h5 class="card-text">Cart title</h5>
+                            <p class="card-text">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero accusantium quia vitae sint maiores, facere quos ab in est excepturi, voluptates velit. Voluptates exercitationem iste ea ab temporibus nulla deleniti!</p>
+                            <p class="card-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nisi, aut.</p>
+                        </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
