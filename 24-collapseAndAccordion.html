@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <title>Bootstrap Collapse & Accordion </title>
+    <style>
+        body{
+            padding: 70px;
+        }
+    </style>
+</head>
+<body>
+    <!-- {collapse : yıkılmak ; accordion : akordion} -->
+
+    <p>
+        <p>[*Doc] Butona tıkladığımızda div'in içindeki yazının görüntüsünün açılması veya açılması. </p>
+        <p>[*Doc] hedef => data-bs-target="#content" : content id'li tag;; data-bs-toggle="collapse" => button'a collapse özelliği kazandırıyoruz. </p>
+        <button type="button" class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#content">Button</button> 
+        <p>[*Doc]a tagı ile içeri açma</p>
+        <a href="#" class="btn btn-secondary" data-bs-toggle="collapse" data-bs-target="#content">Link</a>
+
+        <p>[*Doc]class ile ne kadar aynı class'dan var ise açmak için.</p>
+        <p>[*Doc] data-bs-toggle="collapse" data-bs-target=".card" </p>
+        <p>[*Doc] id ile sayfada tek tag'a erişirken ; class ile birden fazla tag'a erişebiliyoruz</p>
+        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".card">Multiple</button>
+    </p>
+
+    <p>[*Doc] collapse verdiğimizden sayfa açıldığında içerik olmıyacak. </p>
+    <div class="card collapse" id="content">
+        <div class="card-body">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, odio necessitatibus. Cumque porro repudiandae aliquid animi, laudantium nesciunt fuga iure perspiciatis culpa. Molestias accusantium at fugit voluptas, eum iure a.
+        </div>
+    </div>
+
+    <br><br>
+
+    <p>[*Doc] 2 içeriği açmak için</p>
+    <div class="card collapse" id="content2">
+        <div class="card-body">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reprehenderit, odio necessitatibus. Cumque porro repudiandae aliquid animi, laudantium nesciunt fuga iure perspiciatis culpa. Molestias accusantium at fugit voluptas, eum iure a.
+        </div>
+    </div>
+
+    <br><br>
+
+    <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#content3">Button</button>
+    <p>[*Doc] başlangıçta içeriklerin görünür olabilmesi için. => class="card collapse show"</p>
+    <div class="card collapse show" id="content3">
+        <div class="card-body">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum, aliquam quibusdam maxime, harum corrupti consequuntur ullam facere voluptatum, recusandae placeat mollitia? Tenetur sapiente error ex quasi illo officia repellat laboriosam!
+        </div>
+    </div>
+
+    <br><br>
+
+    <p>3 tane içeriği aynı id ile(data-bs-parent="#accordion") birbiri ile ilişkilendiriyoruz : böylece sadece birtanesi açılabiliyor bir anda : birini açtığımızda diğer açık içerik kapanıyor.</p>
+    <div id="accordion">
+
+        <div class="card mb-1">
+            <div class="card-header bg-primary">
+                <a href="#collapseOne" class="card-link text-white" data-bs-toggle="collapse">Collapse One</a>
+            </div>
+
+            <div id="collapseOne" class="collapse show" data-bs-parent="#accordion">
+                <div class="card-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, mollitia rem? Deleniti molestiae provident saepe accusantium corporis nostrum velit tenetur cumque sint voluptates, maxime libero dicta accusamus officiis voluptate dolorem.
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-1">
+            <div class="card-header bg-primary">
+                <a href="#collapseTwo" class="card-link text-white" data-bs-toggle="collapse">Collapse Two</a>
+            </div>
+
+            <div id="collapseTwo" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, mollitia rem? Deleniti molestiae provident saepe accusantium corporis nostrum velit tenetur cumque sint voluptates, maxime libero dicta accusamus officiis voluptate dolorem.
+                </div>
+            </div>
+        </div>
+
+        <div class="card mb-1">
+            <div class="card-header bg-primary">
+                <a href="#collapseThree" class="card-link text-white" data-bs-toggle="collapse">Collapse Three</a>
+            </div>
+
+            <div id="collapseThree" class="collapse" data-bs-parent="#accordion">
+                <div class="card-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, mollitia rem? Deleniti molestiae provident saepe accusantium corporis nostrum velit tenetur cumque sint voluptates, maxime libero dicta accusamus officiis voluptate dolorem.
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
