@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <title>Carousel Bootstrap Slider</title>
+    <style>
+        body{
+            padding: 70px;
+        }
+    </style>
+</head>
+<body>
+
+    <p> [*Doc] Resim slider'ı oluşturmak için </p>
+    <p> otomatikmen 2 saniyede bir kendisi diğer resme gelir : slide üstüne fare imlecini getirmez isek </p>
+    <div class="carousel slide w-50" data-bs-ride="carousel" id="slider1">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!-- d-block ==> içinde bulunduğu container'ı tamamen kaplamasını istiyoruz-->
+                <img class="d-block w-100" src="img/slider-1.jpeg" alt="">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slider-2.jpeg" alt="">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slider-3.jpeg" alt="">
+            </div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <p> resim slider'ının sağa-sola kaymasını sağlayan iconlar eklendi.</p>
+    <div class="carousel slide w-50" data-bs-ride="carousel" id="slider2">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!-- d-block ==> içinde bulunduğu container'ı tamamen kaplamasını istiyoruz-->
+                <img class="d-block w-100" src="img/slider-1.jpeg" alt="">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slider-2.jpeg" alt="">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slider-3.jpeg" alt="">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#slider2" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#slider2" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+    </div>
+
+    <br><br>
+
+    <p> altta kaç resim var ise o kadar tıklama var ve tıklama ya göre ilgili resim'i slider'a getirir.</p>
+    <div class="carousel slide w-50" data-bs-ride="carousel" id="slider3">
+        <ol class="carouse-indicators">
+            <!-- data-bs-slide-to="0" => li'ye ilk tıklandığında 0. elemana gidecek => 1 : 2. resim ...-->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#slider3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#slider3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#slider3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!-- d-block ==> içinde bulunduğu container'ı tamamen kaplamasını istiyoruz-->
+                <img class="d-block w-100" src="img/slider-1.jpeg" alt="">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slider-2.jpeg" alt="">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slider-3.jpeg" alt="">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#slider3" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#slider3" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+    </div>
+
+
+    <br><br>
+
+    <p> resimlerin üzerinde yazı yazması için</p>
+    <div class="carousel slide w-50" data-bs-ride="carousel" id="slider4">
+        <ol class="carouse-indicators">
+            <!-- data-bs-slide-to="0" => li'ye ilk tıklandığında 0. elemana gidecek => 1 : 2. resim ...-->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#slider4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#slider4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#slider4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!-- d-block ==> içinde bulunduğu container'ı tamamen kaplamasını istiyoruz-->
+                <img class="d-block w-100" src="img/slider-1.jpeg" alt="">
+                <div class="carousel-caption">
+                    <h5>Slide 1</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slider-2.jpeg" alt="">
+                <div class="carousel-caption">
+                    <h5>Slide 2</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slider-3.jpeg" alt="">
+                <div class="carousel-caption">
+                    <h5>Slide 3</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#slider4" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#slider4" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+    </div>
+
+    <br><br>
+
+    <p> resimlerin geçişin'de efect eklemek için => carousel-fade</p>
+    <div class="carousel slide carousel-fade w-50" data-bs-ride="carousel" id="slider5">
+        <ol class="carouse-indicators">
+            <!-- data-bs-slide-to="0" => li'ye ilk tıklandığında 0. elemana gidecek => 1 : 2. resim ...-->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#slider5" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#slider5" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#slider5" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!-- d-block ==> içinde bulunduğu container'ı tamamen kaplamasını istiyoruz-->
+                <img class="d-block w-100" src="img/slider-1.jpeg" alt="">
+                <div class="carousel-caption">
+                    <h5>Slide 1</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slider-2.jpeg" alt="">
+                <div class="carousel-caption">
+                    <h5>Slide 2</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slider-3.jpeg" alt="">
+                <div class="carousel-caption">
+                    <h5>Slide 3</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#slider5" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#slider5" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+    </div>
+
+
+    <p> resimler arası geçiş saniyesini ayarlıyabiliyoruz => data-bs-interval="1000" : 1 saniye kalsın</p>
+    <div class="carousel slide carousel-fade w-50" data-bs-ride="carousel" id="slider6">
+        <ol class="carouse-indicators">
+            <!-- data-bs-slide-to="0" => li'ye ilk tıklandığında 0. elemana gidecek => 1 : 2. resim ...-->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#slider6" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#slider6" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#slider6" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="1000">
+                <!-- d-block ==> içinde bulunduğu container'ı tamamen kaplamasını istiyoruz-->
+                <img class="d-block w-100" src="img/slider-1.jpeg" alt="">
+                <div class="carousel-caption">
+                    <h5>Slide 1</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="500">
+                <img class="d-block w-100" src="img/slider-2.jpeg"  alt="">
+                <div class="carousel-caption">
+                    <h5>Slide 2</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+            <div class="carousel-item" data-bs-interval="3000">
+                <img class="d-block w-100" src="img/slider-3.jpeg" alt="">
+                <div class="carousel-caption">
+                    <h5>Slide 3</h5>
+                    <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#slider6" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#slider6" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+    </div>
+
+    <p> js işlemleri için</p>
+    <div class="carousel slide w-50" data-bs-ride="carousel" id="slider7">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <!-- d-block ==> içinde bulunduğu container'ı tamamen kaplamasını istiyoruz-->
+                <img class="d-block w-100" src="img/slider-1.jpeg" alt="">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slider-2.jpeg" alt="">
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="img/slider-3.jpeg" alt="">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#slider7" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#slider7" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+    </div>
+
+    <div>
+        <button id="prev">Prev</button>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        
+        var myCarousel = document.getElementById('slider7');
+        var carousel = new bootstrap.Carousel(myCarousel,{
+            interval: 2000, // geççişi süreleri 2 saniye
+            wrap: false, // geçişler ile slider'daki son resme geldiğinde başamı dönsün => true : evet , false: hayır
+            keyboard: false, //klave sag sol tuşları ile slider'ı yönetme => true: yönetilsin , false : yönetilmesin.
+            pause: 'hover', //slider'ın üerine geldiğimiz'de sliderın geçişi durur : false , true içinde mantıkları var => özelliği vermezsek durmaz.
+            touch: true // dokunmatik ekranlarda : sağa sola kaydırma görüntüsü olsun veya olmasın => true : olsun ; false : olmasın
+        })
+
+        //slide öncesinde
+        myCarousel.addEventListener('slide.bs.carousel', function(e){
+            console.log(e.direction); //hangi yönde devam ediyor slider
+            console.log(e.from); //hangi indexten devam ediyor 
+            console.log(e.to); //hangi index'e gidiyor bilgilerini alabiliriz.
+            console.log('öncesi');
+        });
+
+        //slide sonrasında
+        myCarousel.addEventListener('slid.bs.carousel', function(){
+            console.log('sonrası');
+        });
+
+        // ilgili butona tıklandığında
+        document.getElementById('prev').addEventListener('click', function(){
+            carousel.prev(); //slider'ı 1 resim geri gelir.
+            //carousel.prev(); //slider sonraki resme geçer
+            //carousel.pause(); // durdurur.
+            //carousel.cycle(); // durmuş olan slider'ı soldan saga devam ettirir.
+        });
+
+    </script>
+</body>
+</html>
