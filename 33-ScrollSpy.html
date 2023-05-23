@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+    <title>Bootstrap Scrollspy</title>
+    <style>
+        html{ 
+            scroll-behavior: smooth; /* tıklamalar'da daha yumuşak bir geçiş için.*/
+        }
+
+        body{
+            position: relative; /* düzgün bir şekidle çalışıp sorun çıkartmasın diye bir açıklama var.*/
+        }
+    </style>
+</head>
+<!-- data-bs-spy="scroll" data-bs-target=".navbar" => ilgili alanın üstüne geldiğimizde : navbardaki buton aktif olması için. veya butona tıklandığında aktif olduğunu belirten rengi alması için.-->
+<!-- data-bs-offset="0" => geçişlerde yaklaşınca geçilecek yerin atkif olmasının yaklaşma mesefa ayarı'nın ayarlanması.-->
+<body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="0"> 
+    <p>tek sayfalık projelerde navbarda'n tıklamaya göre ilgili dive yönelme</p>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div id="home" class="bg-success" style="padding-top: 400px; padding-bottom: 400px">
+        <div class="container">
+            <h1>Home</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil consequatur eveniet commodi reprehenderit neque, numquam expedita quo nostrum quam maxime harum quas autem accusantium aut! Atque cupiditate quasi excepturi obcaecati.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sunt dolor aspernatur tempora, itaque blanditiis ipsum quisquam vero impedit earum pariatur tempore numquam incidunt, consequatur, ea minus expedita error? Dolorum.</p>
+        </div>
+    </div>
+    <div id="about" class="bg-warning" style="padding-top: 400px; padding-bottom: 400px">
+        <div class="container">
+            <h1>About</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil consequatur eveniet commodi reprehenderit neque, numquam expedita quo nostrum quam maxime harum quas autem accusantium aut! Atque cupiditate quasi excepturi obcaecati.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sunt dolor aspernatur tempora, itaque blanditiis ipsum quisquam vero impedit earum pariatur tempore numquam incidunt, consequatur, ea minus expedita error? Dolorum.</p>
+        </div>
+    </div>
+    <div id="services" class="bg-danger" style="padding-top: 400px; padding-bottom: 400px">
+        <div class="container">
+            <h1>Services</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil consequatur eveniet commodi reprehenderit neque, numquam expedita quo nostrum quam maxime harum quas autem accusantium aut! Atque cupiditate quasi excepturi obcaecati.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sunt dolor aspernatur tempora, itaque blanditiis ipsum quisquam vero impedit earum pariatur tempore numquam incidunt, consequatur, ea minus expedita error? Dolorum.</p>
+        </div>
+    </div>
+    <div id="contact" class="bg-info" style="padding-top: 400px; padding-bottom: 400px">
+        <div class="container">
+            <h1>Contact</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil consequatur eveniet commodi reprehenderit neque, numquam expedita quo nostrum quam maxime harum quas autem accusantium aut! Atque cupiditate quasi excepturi obcaecati.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sunt dolor aspernatur tempora, itaque blanditiis ipsum quisquam vero impedit earum pariatur tempore numquam incidunt, consequatur, ea minus expedita error? Dolorum.</p>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
