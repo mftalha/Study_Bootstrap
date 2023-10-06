@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/css/bootstrap.min.css" integrity="sha512-b2QcS5SsA8tZodcDtGRELiGv5SaKSk1vDHDaQRda0htPYWZ6046lr3kJ5bAAQdpV2mmA/4v0wQF9MyU6/pDIAg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+    <div class="container my-2 p-3">
+
+        <p>flexleri => esnek kutular için kullanıyoruz</p>
+        <p>kutuların boyutları eşit tutar. => her boyutta.</p>
+        <!-- <div class="d-flex bg-dark p-3 text-white mb-4">d-flex => tüm satır bana ait der.</div> -->
+        <!-- <div class="d-inline-flex bg-success p-3 text-white">d-inline-flex => satırın ihtiyacım olan kadarını bana ver.?</div> -->
+
+        <!-- d-xl-flex ==> xl ve üstü boyutlarda d-flex özelliği göster => tan terside mevcut -->
+        <!--<div class="d-inline-flex d-xl-flex bg-success p-3 text-white">d-inline-flex => satırın ihtiyacım olan kadarını bana ver.?</div>-->
+
+        <p>flex kullanma mantığımız divin tüm satır benim dememesi</p>
+        <div class="d-flex bg-dark p-3 text-white mb-4">
+            <div class="p-2 bg-info">Flex İçerik 1</div>
+            <div class="p-2 bg-danger">Flex İçerik 2</div>
+            <div class="p-2 bg-primary">Flex İçerik 3</div>
+        </div>
+
+        <div class="d-inline-flex bg-dark p-3 text-white mb-4">
+            <div class="p-2 bg-info">Flex İçerik 1</div>
+            <div class="p-2 bg-danger">Flex İçerik 2</div>
+            <div class="p-2 bg-primary">Flex İçerik 3</div>
+        </div>
+
+        <p>Normalde divler bütün satır benim der</p>
+        <div class="bg-dark p-3 text-white ">
+            <div class="p-2 bg-info">Flex İçerik 1</div>
+            <div class="p-2 bg-danger">Flex İçerik 2</div>
+            <div class="p-2 bg-primary">Flex İçerik 3</div>
+        </div>
+
+
+        <p>flexler ile resim kullanma </p>
+        <div class="d-flex bg-dark p-3 text-white mb-4">
+            <div class="p-2 bg-info">Flex İçerik 1</div>
+            <div class="p-2 bg-danger"> <img src="img/6.jpeg" class="img-fluid"> </div>
+            <div class="p-2 bg-primary">Flex İçerik 3</div>
+        </div>
+
+        <p>flexler default olarak 'flex-row' => kullanır soldan-sağa verilen tagları koy diye.</p>
+        <p>flexler default olarak 'flex-row-reverse' => sagdan-sola koyar tagları </p>
+        <div class="d-flex flex-row-reverse bg-dark p-3 text-white mb-4">
+            <div class="p-2 bg-info">Flex İçerik 1</div>
+            <div class="p-2 bg-danger">Flex İçerik 2</div>
+            <div class="p-2 bg-primary">Flex İçerik 3</div>
+        </div>
+
+        <p>lg ve büyük ekranlarda sagdan sola koy tagları , lg dan küçüksa soldan - saga koy tagları</p>
+        <p>ilk flox row çalışır => tersinide yapabiliriz.</p>
+        <div class="d-flex flex-row flex-lg-row-reverse bg-dark p-3 text-white mb-4">
+            <div class="p-2 bg-info">Flex İçerik 1</div>
+            <div class="p-2 bg-danger">Flex İçerik 2</div>
+            <div class="p-2 bg-primary">Flex İçerik 3</div>
+        </div>
+
+
+        <p>burada divleri alt alta tutmak için => terside mevcut. => reverse</p>
+        <div class="d-flex-column bg-dark p-3 text-white mb-4">
+            <div class="p-2 bg-info">Flex İçerik 1</div>
+            <div class="p-2 bg-danger">Flex İçerik 2</div>
+            <div class="p-2 bg-primary">Flex İçerik 3</div>
+        </div>
+
+        <hr>
+
+        <p> Yatayda hizalama yaparken divler arasındaki boşluk etkileşimleri. => justify-content-</p>
+
+        <p>Default olarak böyledir</p>
+        <div class="d-flex justify-content-start bg-dark p-3 text-white mb-4">
+            <div class="p-2 bg-info">Flex İçerik 1</div>
+            <div class="p-2 bg-danger">Flex İçerik 2</div>
+            <div class="p-2 bg-primary">Flex İçerik 3</div>
+        </div>
+
+        <div class="d-flex justify-content-center bg-dark p-3 text-white mb-4">
+            <div class="p-2 bg-info">Flex İçerik 1</div>
+            <div class="p-2 bg-danger">Flex İçerik 2</div>
+            <div class="p-2 bg-primary">Flex İçerik 3</div>
+        </div>
+
+        <div class="d-flex justify-content-end bg-dark p-3 text-white mb-4">
+            <div class="p-2 bg-info">Flex İçerik 1</div>
+            <div class="p-2 bg-danger">Flex İçerik 2</div>
+            <div class="p-2 bg-primary">Flex İçerik 3</div>
+        </div>
+
+        <div class="d-flex justify-content-between bg-dark p-3 text-white mb-4">
+            <div class="p-2 bg-info">Flex İçerik 1</div>
+            <div class="p-2 bg-danger">Flex İçerik 2</div>
+            <div class="p-2 bg-primary">Flex İçerik 3</div>
+        </div>
+
+        <div class="d-flex justify-content-around bg-dark p-3 text-white mb-4">
+            <div class="p-2 bg-info">Flex İçerik 1</div>
+            <div class="p-2 bg-danger">Flex İçerik 2</div>
+            <div class="p-2 bg-primary">Flex İçerik 3</div>
+        </div>
+
+        <div class="d-flex justify-content-evenly bg-dark p-3 text-white mb-4">
+            <div class="p-2 bg-info">Flex İçerik 1</div>
+            <div class="p-2 bg-danger">Flex İçerik 2</div>
+            <div class="p-2 bg-primary">Flex İçerik 3</div>
+        </div>
+
+        <hr>
+
+        <p>col-md ler ile beraber kullanım</p>
+        <div class="d-flex justify-content-start bg-dark p-3 text-white mb-4">
+            <div class="col-md-3 p-2 bg-info">Flex İçerik 1</div>
+            <div class="col-md-5 p-2 bg-danger">Flex İçerik 2</div>
+            <div class="col-md-2 p-2 bg-primary">Flex İçerik 3</div>
+        </div>
+
+        <div class="d-flex justify-content-start bg-dark p-3 text-white mb-4">
+            <div class="col-md-3 p-2 bg-info">Flex İçerik 1</div>
+            <div class="col-md-5 p-2 bg-danger">Flex İçerik 2</div>
+            <div class="col-md-2 p-2 bg-primary">Flex İçerik 3</div>
+        </div>
+
+        <p>bu şekilde çalışmalarda yapabiliyoruz col'lar ile beraber</p>
+        <div class="d-flex justify-content-start bg-dark p-3 text-white mb-4">
+            <div class="col-md-9">
+                <div class="row">
+                    <div class="col-md-3 p-2 bg-info me-2">Flex İçerik 1</div>
+                    <div class="col-md-5 p-2 bg-danger ms">Flex İçerik 2</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="p-2 bg-primary">Flex İçerik 3</div>
+            </div>
+        </div>
+
+    </div>
+
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js" integrity="sha512-X/YkDZyjTf4wyc2Vy16YGCPHwAY8rZJY+POgokZjQB2mhIRFJCckEGc6YyX9eNsPfn0PzThEuNs+uaomE5CO6A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
+
+<!--
+    - d-flex => tüm satır bana ait der.
+    - d-inline-flex => satırın ihtiyacım olan kadarını bana ver.
+-->
+
+<!--
+    5 . dersinden 9. dersine kadar flexleri anlatıyor. => botostrap serisi.
+    https://www.youtube.com/watch?v=RAqlDxiOvNY&ab_channel=FehmiUYAR
+-->
